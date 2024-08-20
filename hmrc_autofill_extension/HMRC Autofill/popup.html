@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="popup.css" /> -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .form-container {
+    width: 720px;
+    /* height: 720px; */
+    overflow: auto;
+    background-color: #fcf7f8db;
+    padding: 8px;
+    border-radius: 2px;
+}
+    </style>
+    <title>HMRC Autofill</title>
+  </head>
+
+  <body>
+    
+  <div class="form-container flex flex-col gap-2">
+    <div class="container mt-3">
+      <h2 class="text-center">HMRC Autofill</h2>
+      <div class="card">
+        <div class="card-header text-center"> <h3>HMRC Login Credentials</h3></div>
+        <div class="card-body">
+         
+          <div class="w-full flex flex-col">
+            <label class="form-label" for="irctc-login">Login username </label>
+            <input id="irctc-login" class="form-control" name="irctc-login" type="text" />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="form-label" for="irctc-password">Login password </label>
+            <input id="irctc-password" class="form-control"  name="irctc-password" type="password" />
+          </div>
+        </div> 
+        <div class="card-footer">
+          <div class="float-end">
+            <button id="submit-btn-top" class="btn btn-secondary">SAVE DATA</button>
+            <button id="load-btn-1-top" class="btn btn-success">LOAD DATA</button>
+            <button id="clear-btn-top" class="btn btn-danger">CLEAR DATA</button>
+            <button id="connect-btn-top" class="btn btn-primary">CONNECT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  </body>
+</html>
